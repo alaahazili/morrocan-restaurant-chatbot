@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Alaa Moroccan Restaurant - Authentic Cuisine</title>
+    <meta name="description" content="Experience authentic Moroccan cuisine at Alaa Restaurant. Traditional tagines, couscous, and Moroccan desserts in a warm, cultural atmosphere.">
+    
+    <!-- Google Fonts with Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap">
+    
+    <!-- Favicon and Apple Touch Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#C1272D">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alaa Moroccan Restaurant">
+    <meta property="og:description" content="Experience authentic Moroccan cuisine at Alaa Restaurant.">
+    <meta property="og:image" content="/social-preview.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alaa Moroccan Restaurant">
+    <meta name="twitter:description" content="Experience authentic Moroccan cuisine at Alaa Restaurant.">
+    <meta name="twitter:image" content="/social-preview.jpg">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div class="noscript-warning">
+        <h1>Welcome to Alaa Moroccan Restaurant</h1>
+        <p>Please enable JavaScript to enjoy our full website experience.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Initial Loading Animation -->
+    <style>
+      /* Smooth transitions for cart */
+      .cart-enter {
+        transform: translateX(100%);
+      }
+      .cart-enter-active {
+        transform: translateX(0);
+        transition: transform 300ms ease-out;
+      }
+      .cart-exit {
+        transform: translateX(0);
+      }
+      .cart-exit-active {
+        transform: translateX(100%);
+        transition: transform 300ms ease-in;
+      }
+      #root:empty::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #C1272D;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+    </style>
+  </body>
+</html>

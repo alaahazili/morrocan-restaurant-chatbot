@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply bg-moroccan-gold bg-opacity-10 font-arabic text-gray-800;
+  }
+  h1, h2, h3 {
+    @apply font-display text-moroccan-red;
+  }
+}
