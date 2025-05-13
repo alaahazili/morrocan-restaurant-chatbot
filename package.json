@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@google-cloud/dialogflow": "^7.0.1",
+    "pg": "^8.15.6",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.22"
+  }
+}

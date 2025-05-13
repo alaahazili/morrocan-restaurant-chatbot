@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useCart } from '@/store/cartStore';
 import { Button } from './Button';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import { useNavigate } from 'react-router-dom';
 
 const cartVariants = {
   hidden: { x: '100%' },
@@ -16,6 +17,13 @@ export const Cart = ({ onClose }: { onClose: () => void }) => {
     clearCart, 
     subtotal 
   } = useCart();
+  
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    onClose();
+    navigate('/payment');
+  };
 
   return (
     <>
@@ -107,7 +115,10 @@ export const Cart = ({ onClose }: { onClose: () => void }) => {
                 >
                   Clear Cart
                 </Button>
-                <Button className="w-full bg-moroccan-gold hover:bg-moroccan-gold/90">
+                <Button 
+                  onClick={handleCheckout}
+                  className="w-full bg-moroccan-gold hover:bg-moroccan-gold/90"
+                >
                   Proceed to Checkout
                 </Button>
               </div>
