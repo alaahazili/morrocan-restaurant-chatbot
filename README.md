@@ -77,14 +77,6 @@ npm run dev
 npm run dev
 ```
 
-## 🔒 Sécurité
-
-- Protection CORS configurée
-- Rate limiting implémenté
-- Headers de sécurité avec Helmet
-- Validation des entrées avec Zod
-- Gestion sécurisée des variables d'environnement
-
 ## 📝 Structure du Projet
 
 ```
@@ -110,25 +102,8 @@ morrocan-restaurant/
     └── agent.json
 ```
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à :
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité
-3. Commiter vos changements
-4. Pousser vers la branche
-5. Ouvrir une Pull Request
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👥 Auteurs
 
-- [Votre Nom] - Développeur Principal
+- ALAA EDDINE HAZILI - Développeur Principal
 
-## 🙏 Remerciements
-
-- Tous les contributeurs
-- La communauté open source
-- Les outils et bibliothèques utilisés 
